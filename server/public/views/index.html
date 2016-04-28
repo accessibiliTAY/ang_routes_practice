@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="utf-8">
+    <title>My Angular app</title>
+    <script src="vendors/angular/angular.min.js"></script>
+    <script src="vendors/angular-route/angular-route.min.js"></script>
+    <script src="assets/scripts/client.min.js"></script>
+    <!-- <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css" /> -->
+    <base href="/" />
+</head>
+
+<body class="main" ng-controller="MainController">
+    <div>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/clinton">Hillary Clinton</a>
+                    </li>
+                    <li>
+                        <a href="/sanders">Bernie Sanders</a>
+                    </li>
+                    <li>
+                        <a href="/drump">Donald Trump</a>
+                    </li>
+                    <li>
+                        <a href="/kasich">John Kasich</a>
+                    </li>
+                    <li>
+                        <a href="/zodiac">Ted Cruz</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div ng-view>
+
+        </div>
+    </div>
+</body>
+
+</html>
